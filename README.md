@@ -1,1 +1,1 @@
-# DSAI-2022-HW1---Electricity-Forcasting
+# DSAI2022_HW1-Electricity-Forcasting
