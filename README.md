@@ -1,5 +1,6 @@
 # DSAI2022_HW1-Electricity-Forcasting
 NCKU DSAI HW1 - Electricity Forecasting
+
 選擇台電提供過去的2019、2020、2021年的"1至3月"的發電量資訊包含淨尖峰供電能力、淨尖峰用電量、民生用電、工業用電等.. 並使用"       "迴歸模型，預測2022/03/30~2022/04/13的備轉容量(MW)。
 
 ## Data analysis
