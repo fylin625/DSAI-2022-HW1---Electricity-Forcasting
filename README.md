@@ -48,7 +48,7 @@ train=train.drop(index=train.sort_values(by='people',ascending=False)['date'][:1
 
 
 ## Model
-在測試 LightGBM, XGBoost, 後，SVR 的 RMSE 相對其他模型較低，因此選擇使用 SVR 作為本次的模型。
+在測試 LightGBM, XGBoost 後，SVR 的 RMSE 相對其他模型較低，因此選擇使用 SVR 作為本次的模型。
 
 Scikit-learn 中的 Support Vector Regression 模型，設有 5 種 kernel 包含 linear, poly, rbf, sigmoid, precomputed。
 
