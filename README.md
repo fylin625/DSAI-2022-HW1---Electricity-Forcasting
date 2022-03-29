@@ -36,7 +36,7 @@
 ## Model Training
 模型使用的是 Scikit-learn 中的 Support Vector Regression 模型，此 model 設有 5 種 kernel 包含 linear, poly, rbf, sigmoid, precomputed。
 
-本模型參數設定為kernel=poly，Kernel coefficient也就是gamma=0.01、C=1e1。 將訓練資料做Standard Scaler輸入至SVR模型中。
+本模型參數設定為kernel=poly，Kernel coefficient 也就是 gamma=0.01、C=1e1。 將訓練資料做 Standard Scaler 輸入至 SVR 模型中。
 
 ## Run
 
