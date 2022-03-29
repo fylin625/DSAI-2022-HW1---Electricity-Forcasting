@@ -1,6 +1,6 @@
 # DSAI 2022 HW1 - Electricity-Forcasting
 ## Overview
-NCKU DSAI HW1 - Electricity Forecasting
+**NCKU DSAI HW1 - Electricity Forecasting**
 
 根據台電提供過去電力的供需資訊，使用 Support Vector Regression 模型，預測 2022/03/30 ~ 2022/04/13 的電力備轉容量(MW)。
 
