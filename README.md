@@ -48,13 +48,13 @@ conda create -n test python=="3.7"
 ```
 activate test
 ```
-路徑移至requirements.txt所在的資料夾，輸入安裝套件指令:
+路徑移至 requirements.txt 所在的資料夾，輸入安裝套件指令
 ```
 conda install --yes --file requirements.txt
 ```
-將app.py、train.csv、test.csv、submission.csv載下後(需在同資料夾內)
+將 app.py、train.csv、test.csv、submission.csv 下載至同資料夾內
 
-輸入以下指令:
+輸入以下指令
 ```
 python app.py --training train.csv --output submission.csv
 ```
