@@ -52,7 +52,7 @@ train=train.drop(index=train.sort_values(by='people',ascending=False)['date'][:1
 
 Scikit-learn 中的 Support Vector Regression 模型，設有 5 種 kernel 包含 linear, poly, rbf, sigmoid, precomputed。
 
-本模型參數設定為 kernel=poly，Kernel coefficient 也就是 gamma=0.01、C=1e1、epsilon=0。將訓練資料做 Standard Scaler 輸入至模型中。
+本模型參數設定為 kernel=poly，kernel 的參數為 gamma=0.01、C=1e1、epsilon=0。將訓練資料做 Standard Scaler 輸入至模型中。
 
 ## Run
 
