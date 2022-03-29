@@ -61,4 +61,3 @@ python app.py --training train.csv --output submission.csv
 ## Result
 [submission.csv](https://github.com/fylin625/DSAI2022_HW1-Electricity-Forcasting/blob/main/submission.csv)
 
-RMSE: 400
