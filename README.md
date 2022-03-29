@@ -34,10 +34,12 @@
 
 ![GITHUB]()
 
-## Model Training
-模型使用的是 Scikit-learn 中的 Support Vector Regression 模型，此 model 設有 5 種 kernel 包含 linear, poly, rbf, sigmoid, precomputed。
+## Model
+在測試 LightGBM, XGBoost, 後，SVR 的 RMSE 相對其他模型較低，因此選擇使用 SVR 作為本次的模型。
 
-本模型參數設定為kernel=poly，Kernel coefficient 也就是 gamma=0.01、C=1e1。 將訓練資料做 Standard Scaler 輸入至 SVR 模型中。
+Scikit-learn 中的 Support Vector Regression 模型，設有 5 種 kernel 包含 linear, poly, rbf, sigmoid, precomputed。
+
+本模型參數設定為 kernel=poly，Kernel coefficient 也就是 gamma=0.01、C=1e1。將訓練資料做 Standard Scaler 輸入至模型中。
 
 ## Run
 
