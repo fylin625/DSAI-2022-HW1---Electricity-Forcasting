@@ -5,8 +5,10 @@
 經由hedamap取得與備轉容量較相關的
 1.備轉容量率(rate)
 2.淨尖峰供電能力(elec_pro)
-3.太陽能發電(sun)
-4.民生用電(people)
-5.假日(holiday)
+3.麥寮#2(ML#2)
+4.林口#2(LK#2)
+5.和平#1(HP#1)
+6.民生用電(people)
+7.假日(holiday)
 requirements安裝指令:
 conda install --yes --file requirements.txt
