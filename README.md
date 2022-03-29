@@ -58,3 +58,6 @@ conda install --yes --file requirements.txt
 ```
 python app.py --training train.csv --output submission.csv
 ```
+## Result
+submission.csv
+RMSE: 400
