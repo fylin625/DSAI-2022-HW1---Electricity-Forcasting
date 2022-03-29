@@ -22,24 +22,26 @@
 ## Data Analysis
 使用 heatmap 尋找與備轉容量 (operating reserve) 關聯度較高的特徵。
 
-![GITHUB]()
+![GITHUB](https://github.com/fylin625/DSAI2022_HW1-Electricity-Forcasting/blob/main/images/heatmap.png)
 
 ## Feature Selection
-從 heatmap 中選擇備轉容量率(%)、民生用電與太陽能發電作為訓練的特徵，並加入當日是否為工作日（holiday）的特徵。
+從 heatmap 中選擇備轉容量率(%)、麥寮#2、林口#2、和平#1與民生用電作為訓練的特徵，並加入當日是否為工作日（holiday）的特徵。
 
 ## Data Preprocessing
-將這些關聯度高的特徵中，刪除 10 筆在訓練資料中偏差較大的數值。
+將這些關聯度高的特徵中，依資料分布刪除 2 到 10 筆訓練資料中偏差較大的數值。
+### 資料處理前
+![GITHUB](https://github.com/fylin625/DSAI2022_HW1-Electricity-Forcasting/blob/main/images/pairplot.png)
 
-![GITHUB]()
+### 資料處理後
+![GITHUB](https://github.com/fylin625/DSAI2022_HW1-Electricity-Forcasting/blob/main/images/pairplot_dropped.png)
 
-![GITHUB]()
 
 ## Model
 在測試 LightGBM, XGBoost, 後，SVR 的 RMSE 相對其他模型較低，因此選擇使用 SVR 作為本次的模型。
 
 Scikit-learn 中的 Support Vector Regression 模型，設有 5 種 kernel 包含 linear, poly, rbf, sigmoid, precomputed。
 
-本模型參數設定為 kernel=poly，Kernel coefficient 也就是 gamma=0.01、C=1e1。將訓練資料做 Standard Scaler 輸入至模型中。
+本模型參數設定為 kernel=poly，Kernel coefficient 也就是 gamma=0.01、C=1e1、epsilon=0。將訓練資料做 Standard Scaler 輸入至模型中。
 
 ## Run
 
