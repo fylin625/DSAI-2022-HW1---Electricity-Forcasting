@@ -29,6 +29,13 @@
 
 ## Data Preprocessing
 將這些關聯度高的特徵中，依資料分布刪除 2 到 10 筆訓練資料中偏差較大的數值。
+
+    train = train.drop(index=train.sort_values(by='rate',ascending=False)['date'][:2].index)
+    train = train.drop(index=train.sort_values(by='ML#2',ascending=False)['date'][:2].index)
+    train = train.drop(index=train.sort_values(by='LK#2',ascending=False)['date'][:5].index)
+    train = train.drop(index=train.sort_values(by='HP#1',ascending=False)['date'][:2].index)
+    train = train.drop(index=train.sort_values(by='people',ascending=False)['date'][:10].index)
+
 ### 資料處理前
 ![GITHUB](https://github.com/fylin625/DSAI2022_HW1-Electricity-Forcasting/blob/main/images/pairplot.png)
 
