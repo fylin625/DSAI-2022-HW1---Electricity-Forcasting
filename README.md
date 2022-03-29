@@ -1,4 +1,4 @@
-# DSAI 2022 HW1 - Electricity-Forcasting
+# DSAI 2022 HW1 - Electricity Forcasting
 ## Overview
 ### NCKU DSAI HW1 - Electricity Forecasting
 
